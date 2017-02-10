@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Variables and JS</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../Common/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1>CSS Variables with <span>Javascript</span></h1>
+    <p>Padding</p>
+    <input type="range" min="0" max="100" data-css-variable="--padding-value">
+    <p>Blur</p>
+    <input type="range" min="0" max="10" data-css-variable="--blur-value">
+    <p>Color</p>
+    <input type="color" data-css-variable="--color">
+    <div class="container">
+      <img src="http://placehold.it/350x150">
+    </div>
+    <script type="text/javascript" src="../Common/js/live.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
