@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>JS30</title>
-    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="../Common/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
@@ -12,7 +12,7 @@
       </h2>
     </div>
     <div class="container">
-      <div id="clapElement" class="commands">
+      <div data-key="65" class="commands">
         <h3 class="command-title">
           A
         </h3>
@@ -20,7 +20,7 @@
         CLAP
         </p>
       </div>
-      <div id="hihatElement" class="commands">
+      <div data-key="83" class="commands">
         <h3 class="command-title">
           S
         </h3>
@@ -28,7 +28,7 @@
         HIHAT
         </p>
       </div>
-      <div id="kickElement" class="commands">
+      <div data-key="68" class="commands">
         <h3 class="command-title">
           D
         </h3>
@@ -36,7 +36,7 @@
         KICK
         </p>
       </div>
-      <div id="openhatElement" class="commands">
+      <div data-key="70" class="commands">
         <h3 class="command-title">
           F
         </h3>
@@ -44,7 +44,7 @@
         OPENHAT
         </p>
       </div>
-      <div id="boomElement" class="commands">
+      <div data-key="71" class="commands">
         <h3 class="command-title">
           G
         </h3>
@@ -52,7 +52,7 @@
         BOOM
         </p>
       </div>
-      <div id="rideElement" class="commands">
+      <div data-key="72" class="commands">
         <h3 class="command-title">
           H
         </h3>
@@ -60,7 +60,7 @@
         RIDE
         </p>
       </div>
-      <div id="snareElement" class="commands">
+      <div data-key="74" class="commands">
         <h3 class="command-title">
           J
         </h3>
@@ -68,7 +68,7 @@
         SNARE
         </p>
       </div>
-      <div id="tomElement" class="commands">
+      <div data-key="75" class="commands">
         <h3 class="command-title">
           K
         </h3>
@@ -76,7 +76,7 @@
         TOM
         </p>
       </div>
-      <div id="tinkElement" class="commands">
+      <div data-key="76" class="commands">
         <h3 class="command-title">
           L
         </h3>
@@ -85,14 +85,14 @@
         </p>
       </div>
     </div>
-    <audio id="boom" src="sounds/boom.wav"></audio>
-    <audio id="clap" src="sounds/clap.wav"></audio>
-    <audio id="hihat" src="sounds/hihat.wav"></audio>
-    <audio id="kick" src="sounds/kick.wav"></audio>
-    <audio id="openhat" src="sounds/openhat.wav"></audio>
-    <audio id="ride" src="sounds/ride.wav"></audio>
-    <audio id="snare" src="sounds/snare.wav"></audio>
-    <audio id="tink" src="sounds/tink.wav"></audio>
-    <audio id="tom" src="sounds/tom.wav"></audio>
+    <audio data-key="71" src="sounds/boom.wav"></audio>
+    <audio data-key="65" src="sounds/clap.wav"></audio>
+    <audio data-key="83" src="sounds/hihat.wav"></audio>
+    <audio data-key="68" src="sounds/kick.wav"></audio>
+    <audio data-key="70" src="sounds/openhat.wav"></audio>
+    <audio data-key="72" src="sounds/ride.wav"></audio>
+    <audio data-key="74" src="sounds/snare.wav"></audio>
+    <audio data-key="76" src="sounds/tink.wav"></audio>
+    <audio data-key="75" src="sounds/tom.wav"></audio>
     <script src="app.js"></script>
   </body>
