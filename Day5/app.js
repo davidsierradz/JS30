@@ -1,28 +1,23 @@
-var columns = document.querySelectorAll('.column');
+HTMLElement.prototype.toggleShowFromChildrens = function () {
+  [...this.children]
+    .filter(child => child.nodeName === 'H3')
+    .map(child => child.classList.toggle('show'));
+};
 
-columns.forEach((column) => {
+document.querySelectorAll('.column').forEach((column, index, columns) => {
   column.addEventListener('click', (e) => {
+    const columnElement = e.currentTarget;
 
-    for (var i = 0; i < e.target.parentElement.children.length; i++) {
-      if (e.target.parentElement.children[i] !== e.target) {
-        if (e.target.parentElement.children[i].classList.contains('column-clicked')) {
-          e.target.parentElement.children[i].classList.remove('column-clicked');
-          for (var j = 0; j < e.target.parentElement.children[i].children.length; j++) {
-            if (e.target.parentElement.children[i].children[j].nodeName === "H3") {
-              e.target.parentElement.children[i].children[j].classList.remove('show');
-            }
-          }
-        }
-      }
-    }
+    [...columns]
+      .filter(childrenColumn =>
+        childrenColumn.classList.contains('column-clicked') && !Object.is(childrenColumn, columnElement))
+      .map((childrenColumn) => {
+        childrenColumn.classList.remove('column-clicked');
+        childrenColumn.toggleShowFromChildrens();
+      });
 
-    e.target.classList.toggle('column-clicked');
+    columnElement.classList.toggle('column-clicked');
 
-    for (var i = 0; i < e.target.children.length; i++) {
-      if (e.target.children[i].nodeName === "H3") {
-        e.target.children[i].classList.toggle('show');
-      }
-    }
-
+    columnElement.toggleShowFromChildrens();
   });
 });
