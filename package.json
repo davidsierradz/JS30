@@ -1,0 +1,26 @@
+{
+  "name": "js30",
+  "version": "1.0.0",
+  "description": "Javascript based fun projects. Personal interpretation of https://github.com/wesbos/JavaScript30 vanilla js challange.",
+  "main": "index.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "eslint": "^4.6.1",
+    "eslint-config-airbnb-base": "^12.0.0",
+    "eslint-plugin-import": "^2.7.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidsierradz/JS30.git"
+  },
+  "author": "David Sierra DiazGranados",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davidsierradz/JS30/issues"
+  },
+  "homepage": "https://github.com/davidsierradz/JS30#readme"
+}
